@@ -34,14 +34,15 @@ body {
 
 .header {
   max-width: 50rem;
-  margin: 5rem auto;
+  margin: 7rem auto;
   text-align: center;
 }
 
 .header__title {
+  margin-bottom: 2rem;
   font-size: 3.2rem;
   font-weight: 200;
-  margin-bottom: 2rem;
+  color: var(--color-secondary-g-blue);
 }
 
 .header__description {
