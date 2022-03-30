@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  --color-red: #ea5353;
+  --color-cyan: #45d3d3;
+  --color-orange: #fcaf4a;
+  --color-blue: #549ef2;
+
+  --color-secondary-blue:	#4c4e61;
+  --color-secondary-g-blue:	#a3a5ae;
+  --color-secondary-l-grey:	#fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  line-height: 1.4;
+  background-color: var(--color-secondary-l-grey);
+}
+
+.bold {
+  color: var(--color-secondary-blue);
+  font-weight: 600;
+}
+
+.header {
+  max-width: 50rem;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 3.2rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+.header__description {
+  font-size: 1.5rem;
+  color: var(--color-secondary-g-blue);
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 120.5rem;
+  padding: 0 2.5rem;
+  margin: 0 auto;
+}
+
+.box {
+  width: 35rem;
+  padding: 4rem 2.8rem;
+  position: relative;
+  border-radius: .5rem;
+  background-color: #FFF;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06), 0 3px 6px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.box::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.box--cyan,
+.box--blue {
+  transform: translateY(50%);
+}
+
+.box--cyan::after {
+  background-color: var(--color-cyan);
+}
+
+.box--red::after {
+  background-color: var(--color-red);
+}
+
+.box--orange::after {
+  background-color: var(--color-orange);
+}
+
+.box--blue::after {
+  background-color: var(--color-blue);
+}
+
+.box__title {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  color: var(--color-secondary-blue);
+}
+
+.box__description {
+  font-size: 1.4rem;
+  margin-bottom: 4.5rem;
+}
+
+.box__image {
+  display: block;
+  margin-left: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+  padding: 2rem 5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--color-secondary-blue);
+}
+
+.footer__fem,
+.footer__author {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+@media screen and (max-width: 1150px) {
+  .box--cyan,
+  .box--blue {
+    transform: translateY(0);
+  }
+}
