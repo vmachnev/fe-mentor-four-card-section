@@ -10,8 +10,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/nft-card-solution-a8hsB2IJY)
-- Live Site URL: (https://fe-nft-card.netlify.app)
+- Solution URL: (https://www.frontendmentor.io/solutions/four-card-feature-section-solution-HkH6YyMmq)
+- Live Site URL: (https://fe-mentor-four-cards-section.netlify.app)
 
 ## My process
 
